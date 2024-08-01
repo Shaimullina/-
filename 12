@@ -11,3 +11,13 @@ while number != 50:
     try_new += 1
     number = int(input('Введите число: '))
 print("Вы угадали! Число попыток: ", try_new)
+
+задача 3
+n = int(input())
+# total = n
+# while n > 1:
+#     n -= 1
+#     total = (total + 1) * n
+# print(total)
+
+
