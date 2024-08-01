@@ -63,3 +63,39 @@ for i in range(1, n + 1):
     for j in range(1, 10):
         print(f"{i} + {j} = {i + j}")
     print()
+
+задача 0
+n = 4
+
+
+mas = [ [0] * n for i in range(n) ]
+
+x = 0
+y = -1
+d_row = 0
+d_column = 1
+
+i = 1
+while i <= n ** 2:
+    if 0 <= x + d_row < n and 0 <= y + d_column < n and mas[x + d_row] [y + d_column] == 0:
+        x += d_row
+        y += d_column
+        mas [x] [y] = i
+        i += 1
+    else:
+        if d_column == 1:
+            d_row = 1
+            d_column = 0
+        elif d_row == 1:
+            d_row = 0
+            d_column = -1
+        elif d_column == 1:
+            d_row = 1
+            d_column = 0
+        elif d_row == -1:
+            d_row = 0
+            d_column = 1
+for row in mas:
+  for elem in row:
+    print(elem, end = ' ')
+  print()
