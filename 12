@@ -1,1 +1,13 @@
-1
+задача 4
+number = int(input('Введите число: '))
+try_new = 0
+while number != 50:
+  if number < 4:
+    print('Число меньше, чем нужно. Попробуйте еще')
+    try_new += 1
+    number = int(input('Введите число: '))
+  else:
+    print("Число больше, чем нужно. Попробуйте еще")
+    try_new += 1
+    number = int(input('Введите число: '))
+print("Вы угадали! Число попыток: ", try_new)
